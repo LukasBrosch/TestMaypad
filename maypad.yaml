@@ -1,22 +1,18 @@
-projectName: Testrepo
-projectDescription: TestDescription
-allBranches: true
+projectName: Testrepo Changed
+projectDescription: New TestDescription
+allBranches: false
 
 branches:
   - name: master
-    description: Lorem Ipsum
+    description: Lorem Ipsum 42
     members:
       - Peter
+      - Dieter
     mails:
       - example.mail@gmail.com
     build:
       type: webhook
       method: POST
       url: https://greatBuild.com/12345abc
-    deployment:
-      name: Great-Deployment
-      type: webhook
-      method: POST
-      url: https://greatDeployment.com/54321abcd
     dependsOn:
       - 2:master
